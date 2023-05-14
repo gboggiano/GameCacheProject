@@ -510,94 +510,13 @@ font-weight: bold; */
 
 /*------------ Iconic Games----------*/
 
+/*All Bootstrap*/
 
-.grid--boxes--ic--container{
+.ic--wmessage--container{
 
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(6, 2fr);
-    background-color: orange;
-    grid-template-areas:
-    'iwmessage iwmessage iwmessage iwmessage' 
-    'ibanner ibanner ibanner ibanner'
-    'ibanner ibanner ibanner ibanner'
-    'ititle ititle ititle ititle'
-    'i1 i2 i3 i4'
-    'i5 i6 i7 i8'
-    ;
-    /* grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(5, 500px);
-    grid-template-areas:
-    /* 'area1 area2 area3 area4'
-    'area5 area6 area7 area8'
-    'area9 area9 area9 area9'; */
-    /* 'area1 area1 area1 area1'
-    'area2 area2 area3 area3'
-    'area4 area4 area5 area5'
-    'area6 area6 area7 area7'
-    'area8 area8 area9 area9'
-    'area10 area10 area11 area11';
-    background-color:#37306B;
-    gap: 15px;
-    padding: 30px; */ 
-
+    background-color: #37306B;
+    text-align: center;
 }
-
-.ibanner{
-
-    grid-area: ibanner;
-}
-
-.ititle{
-
-    grid-area: ititle;
-}
-
-.iwmessage{
-
-    grid-area: iwmessage;
-}
-
-.i1{
-
-    grid-area: i1;
-}
-
-.i2{
-
-    grid-area: i2;
-}
-
-.i3{
-
-    grid-area: i3;
-}
-
-.i4{
-
-    grid-area: i4;
-}
-
-.i5{
-
-    grid-area: i5;
-}
-
-.i6{
-
-    grid-area: i6;
-}
-
-.i7{
-
-    grid-area: i7;
-}
-
-.i8{
-
-    grid-area: i8;
-}
-
 
 
 /*----------------------------------------Footer------------------------------*/
