@@ -512,9 +512,7 @@ font-weight: bold; */
 
 /*All Bootstrap*/
 
-/*Nav Bar*/
-
-
+/*--Nav Bar--*/
 
 .ic--wmessage--container{
 
@@ -531,25 +529,66 @@ font-weight: bold; */
     color: #fefefe;
 }
 
-/*carousel*/
+
+/*Banner*/
+
+.class
+
+/*--logo--*/
+
+.custom--logo{
+
+    width: 25%;
+    text-align: start;
+
+}
+.container-fluid img{
+
+    height: 150px;
+    object-fit: cover;
+}
+
+/*--carousel--*/
 
 .carousel-inner{
 
-    height: 800px;
+    height: 500px;
 
 }
 
 .carousel-item{
 
-    height: 800px;
+    height: 500px;
     
 }
 
 .carousel-item img{
 
-    height: 800px;
+    height: 500px;
     object-fit: cover;
     
+}
+
+
+/*--responsive--*/
+@media only screen and (max-width:576px){
+    
+    .carousel-inner, .carousel-item, .carousel-item img {
+    
+        height: 300px;}
+}
+
+.container-sm{
+
+    font-family: 'Exo 2', 'Roboto', sans-serif;
+    color: #fefefe;
+    text-align: center;
+    padding: 30px;
+}
+
+.iconic--main{
+
+    background-color: #242047;
 }
 
 /*----------------------------------------Footer------------------------------*/
@@ -651,10 +690,4 @@ margin-top: 33%;
 
 }
 
-
-
-
-
-
-
-
+/*------------ Iconic Games----------*/
