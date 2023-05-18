@@ -14,69 +14,71 @@
 </head>
 <body>
     <header>
-
-        <nav class="bg-primary"> <!-- -------------bootstrap test ----------------------- -->
-            <section class="logo--box">
-                <div class="logo">
-                    <img src="../assets/pixelpad-removebg-preview.png" alt="pixellogo">
-            </section>         
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Home</a>
+        <!--bootstrap test-->
+        <nav class="navbar navbar-dark navbar-custom fixed-top navbar-expand-md"> <!--adding custom color with custom class-->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Game Cache</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="./companies.html">Companies & Consoles</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./companies.html">Companies & Consoles</a>
                     </li>
-                    <li>
-                        <a href="./iconicgames.html">Iconic Games</a>
-                    </li>
-                    <li>
-                        <a href="./officialwebsites.html">Official Websites</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                </ul>
-        </nav>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iconicgames.html">Iconic Games</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./officialwebsites.html">Official Websites</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main class="big--content">
+    <main>
 
-        <section class="banner--box">
+        <section>
 
-            <div class="banner">
+            <img src="../assets/iconic games.png" class="img-fluid" alt="...">
 
-                <img src="../assets/iconic games.png" alt="pixellandscape">
+        </section>
 
-                <div class="banner--message">
-
-                    <h1>ICONIC GAMES</h1>
-    
-                </div>
-
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/Nintendogames.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/segagamesII.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/xbox games.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-
-        <section class="ic--wmessage--container">
-
-            <p class="placeholder-glow">
-                <span class="placeholder col-12 bg-warning"></span>
-            </p>
-                <h2>Do you remember the thrill of playing Mario, Sonic, Halo and other legendary games that shaped the history of gaming? Whether you are a nostalgic fan or a curious newcomer, you can relive the magic of these iconic games in this section. Explore the origins, gameplay, characters and legacy of some of the most influential and beloved games of all time.</h2>
-            <p class="placeholder-wave">
-                <span class="placeholder col-12 bg-warning"></span>
-            </p>
-
-        </section>
-
-        <section class="split--banner-container">
-
-            <img src="../assets/splitbannerpixel.png" class="img-fluid" alt="pixelart">
-
-
-        </section>
-
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
     <footer>
