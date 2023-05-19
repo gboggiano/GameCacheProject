@@ -11,80 +11,164 @@
 
 /* --------------------   header -------------------*/
 
+
+/* ------    nav   ------  */
+
+/* Bootstrap for all*/
+
+/*--Nav Bar--*/
+
+.ic--wmessage--container{
+
+    background-color: #37306B;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #230068;
+}
+
+.navbar-brand, .nav-link {
+
+    color: #fefefe;
+}
+
+
+/*OLD CODE*/
+
 /*All Pages*/
 
 /*logo*/ /*flex box*/
 
-.logo--box{
+/* .logo--box{
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
     /* background-color: blue; */
-    z-index: 3;
+    /* z-index: 3;
     width: 18%;
-    height: 50px;
+    height: 50px; */ 
 
 
-}
-/* .logo{
-
-    width: 20%;
-    height: 100px
-} */
+/* }
 
 .logo img{
 
     object-fit: cover;
     width: 100%;
 
-}
+} */
 
 
-/* ------    nav   ------  */
 
-/*All Pages*/
-
-nav {
+/* nav {
     
     background-color: #230068;
     padding: 10px;
     /* background-color: #230068; */
     /* padding: 10px; */
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-between;
 
-}
+} */ 
 
 
-nav ul {
+/* nav ul {
 
     list-style: none;
     
-}
+} */
 
-nav ul li a{
+/* nav ul li a{
 
     text-decoration: none;
     color: #fefefe;
 
-}
-
+} */
+/* 
 .menu{
     
     display: flex;
     /* background-color: gray; */
-    justify-content: flex-end;
-    gap: 20px;
+    /* justify-content: flex-end;
+    gap: 20px; */
+/* } */ 
+
+
+
+/* ---    Logo   ----  */
+
+/* Bootstrap for all*/
+
+.custom--logo{
+
+    width: 25%;
+    text-align: start;
+
+}
+.container-fluid img{
+
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* ---------------           main        -----------------*/
+
+/* ---    Banner   ----  */
+
+/* with Boostrap for all*/
+
+.banner--container--icg{
+
+    position: relative;
+    width: 100%;
+}
+
+.banner--container--icg img{
+
+    width: 100%;
+}
+
+.banner--message--icg{
+
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    /* z-index: -1; */
+    max-width: 100%;
+    width: auto;
+    color: #fefefe;
+}
+
+/*Welcome Message*/
+/* with Boostrap for all*/
+
+.container-sm{
+
+    font-family: 'Exo 2', 'Roboto', sans-serif;
+    color: #fefefe;
+    text-align: justify;
+    padding: 35px;
+}
+
+.container-sm h2{
+
+    padding: 30px;
+}
+
+.container-sm hr{
+
+    width: 50%;
+    align-self: center;
+    margin-left: 25%;
 }
 
 
 
-
-
-/* ---------------           main        -----------------*/
 
 /*----------------Index-----------------*/
 
@@ -510,43 +594,10 @@ font-weight: bold; */
 
 /*------------ Iconic Games----------*/
 
-/*All Bootstrap*/
-
-/*--Nav Bar--*/
-
-.ic--wmessage--container{
-
-    background-color: #37306B;
-    text-align: center;
-}
-
-.navbar-custom {
-    background-color: #230068;
-}
-
-.navbar-brand, .nav-link {
-
-    color: #fefefe;
-}
-
-
-/*Banner*/
-
-.class
 
 /*--logo--*/
 
-.custom--logo{
 
-    width: 25%;
-    text-align: start;
-
-}
-.container-fluid img{
-
-    height: 150px;
-    object-fit: cover;
-}
 
 /*--carousel--*/
 
@@ -578,18 +629,25 @@ font-weight: bold; */
         height: 300px;}
 }
 
-.container-sm{
-
-    font-family: 'Exo 2', 'Roboto', sans-serif;
-    color: #fefefe;
-    text-align: center;
-    padding: 30px;
-}
 
 .iconic--main{
 
     background-color: #242047;
 }
+
+@media only screen and (max-width:576px){
+
+    .navbar-custom {
+        position: unset;
+    }
+
+    .banner--message--icg{
+
+        position: absolute;
+        top: 15%;
+    }
+}
+
 
 /*----------------------------------------Footer------------------------------*/
 
