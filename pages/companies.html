@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link to Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <!--link to Css-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Favicon de la lamina 19, clase 2-->
     <link rel="stylesheet" href="../assets/pixelpad-removebg-preview.png">
@@ -11,51 +14,55 @@
 </head>
 <body>
     <header>
-
         <nav>
-                <section class="logo--box">
-                    <div class="logo">
-                        <!-- <a href="../preentega2-boggiano/assets/pixelpad-removebg-preview.png">logo</a> -->
-                        <img src="../assets/pixelpad-removebg-preview.png" alt="pixellogo">
-                </section>     
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Home</a>
+                  <!--bootstrap Nav-->
+        <nav class="navbar navbar-dark navbar-custom fixed-top navbar-expand-md"> <!--adding custom color with custom class-->
+            <div class="container-fluid">
+                <a href="../index.html"><img src="../assets/pixelpad-removebg-preview.png" class="img-fluid" alt="pixellogo"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GAME CACHE</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <a href="./companies.html">Companies & Consoles</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./companies.html">Companies & Consoles</a>
                     </li>
-                    <li>
-                        <a href="./iconicgames.html">Iconic Games</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iconicgames.html">Iconic Games</a>
                     </li>
-                    <li>
-                        <a href="./officialwebsites.html">Official Websites</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./officialwebsites.html">Official Websites</a>
                     </li>
-                    <li>
-                        <a href="./about.html">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
                     </li>
-                </ul>
+                    </ul>
+                </div>
+                </div>
+            </div>
         </nav>
 
     </header>
 
-    <main class="big--content">
+    <section class="banner--container--icg">
 
-        <section class="banner--box">
+        <img src="../assets/CompaniesandConsoles.png" class="img-fluid" alt="...">
 
-            <div class="banner">
+        <div class="banner--message--icg">
+            
+            <h1>COMPANIES & CONSOLES</h1>
+        
+        </div>
 
-                <img src="../assets/CompaniesandConsoles.png" alt="pixellandscape">
-
-                <div class="banner--message">
-
-                    <h1>COMPANIES &<br>
-                        CONSOLES</h1>
-    
-                </div>
-
-            </div>
-
+    </section>
 
         </section>
 
@@ -68,11 +75,11 @@
             </div>
 
             <div class="grid--box b2">
+                <div class="container-md">
+                    <h2>NINTENDO</h2><br>
 
-                <h2>NINTENDO</h2><br>
-
-                <p>Nintendo is a Japanese company that has a long history of making entertainment products. It was founded in 1889 by Fusajiro Yamauchi as a maker of hanafuda, a type of Japanese playing cards. Over the years, it diversified into various kinds of toys, such as Disney-themed cards, mechanical contraptions, and electronic games. In the late 1970s and early 1980s, Nintendo entered the video game industry with arcade hits like Donkey Kong and home consoles like the Nintendo Entertainment System (NES). Nintendo became a global leader in video games with iconic franchises like Mario, Zelda, Metroid, and Pokémon, and innovative hardware like the Game Boy, the Nintendo DS, the Wii, and the Switch. Nintendo's vision is to create unique and surprising experiences that bring joy to people of all ages and backgrounds. Nintendo has sold over 5.3 billion games and 800 million consoles worldwide, and has influenced generations of gamers and pop culture..</p>
-
+                    <p>Nintendo is a Japanese company that has a long history of making entertainment products. It was founded in 1889 by Fusajiro Yamauchi as a maker of hanafuda, a type of Japanese playing cards. Over the years, it diversified into various kinds of toys, such as Disney-themed cards, mechanical contraptions, and electronic games. In the late 1970s and early 1980s, Nintendo entered the video game industry with arcade hits like Donkey Kong and home consoles like the Nintendo Entertainment System (NES). Nintendo became a global leader in video games with iconic franchises like Mario, Zelda, Metroid, and Pokémon, and innovative hardware like the Game Boy, the Nintendo DS, the Wii, and the Switch. Nintendo's vision is to create unique and surprising experiences that bring joy to people of all ages and backgrounds. Nintendo has sold over 5.3 billion games and 800 million consoles worldwide, and has influenced generations of gamers and pop culture..</p>
+                </div>
             </div>
 
             
@@ -91,11 +98,11 @@
             </div>
 
             <div class="grid--box b5">
+                <div class="container-md">
+                    <h2>XBOX (MICROSOFT)</h2><br>
 
-                <h2>XBOX (MICROSOFT)</h2><br>
-
-                <p>Xbox is a video gaming brand created and owned by Microsoft. The brand started in 2001 with the launch of the original Xbox console, which was the first video game console offered by an American company after Atari. The original Xbox competed with Sony's PlayStation 2 and Nintendo's GameCube in the sixth generation of consoles. Microsoft's second console, the Xbox 360, was released in 2005 and introduced online gaming with Xbox Live, as well as motion gaming with Kinect. The Xbox 360 was one of the best-selling consoles of the seventh generation, competing with Sony's PlayStation 3 and Nintendo's Wii. Microsoft's third console, the Xbox One, was released in 2013 and added features such as voice control, cloud computing, and backward compatibility. The Xbox One faced strong competition from Sony's PlayStation 4 and Nintendo's Switch in the eighth generation of consoles. Microsoft's fourth line of consoles, the Xbox Series X and Series S, were released in 2020 and offer high performance gaming with ray tracing, variable refresh rate, and fast loading times. The Xbox Series X and Series S are part of the ninth generation of consoles, alongside Sony's PlayStation 5. Microsoft's vision for Xbox is to create immersive and diverse gaming experiences that connect players across devices and platforms.</p>
-
+                    <p>Xbox is a video gaming brand created and owned by Microsoft. The brand started in 2001 with the launch of the original Xbox console, which was the first video game console offered by an American company after Atari. The original Xbox competed with Sony's PlayStation 2 and Nintendo's GameCube in the sixth generation of consoles. Microsoft's second console, the Xbox 360, was released in 2005 and introduced online gaming with Xbox Live, as well as motion gaming with Kinect. The Xbox 360 was one of the best-selling consoles of the seventh generation, competing with Sony's PlayStation 3 and Nintendo's Wii. Microsoft's third console, the Xbox One, was released in 2013 and added features such as voice control, cloud computing, and backward compatibility. The Xbox One faced strong competition from Sony's PlayStation 4 and Nintendo's Switch in the eighth generation of consoles. Microsoft's fourth line of consoles, the Xbox Series X and Series S, were released in 2020 and offer high performance gaming with ray tracing, variable refresh rate, and fast loading times. The Xbox Series X and Series S are part of the ninth generation of consoles, alongside Sony's PlayStation 5. Microsoft's vision for Xbox is to create immersive and diverse gaming experiences that connect players across devices and platforms.</p>
+                </div>
             </div>
 
             <div class="grid--box b6">
@@ -149,40 +156,40 @@
 
     <footer>
 
-        <section class="footer--logo--box">
+        <div class="b-example-divider"></div>
 
-            <div class="footer--logo">
-
-                <img src="../assets/pixelpad-removebg-preview.png" alt="pixellogoart">
-
-            </div>
-
-            
-            <div class="footer--disclaimer">
-
-                <hr>
-                <p>This website is created for academic purposes only and does not represent any official or professional views or opinions.</p>
-                
-            </div>
-
-            <div class="footer--menu">
-
-                <h2>JUMP IN!</h2>
-                <ul>
-                    <li>Youtube</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                    <li>Discord</li>
-                    <li>About</li>
-                    <li>Academic Website</li>
-                </ul>
-
-            </div>
-
-
-        </section>
-
-    </footer>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <a href="./index.html"><img src="../assets/pixelpad-removebg-preview.png" class="img-fluid" alt="pixellogo"></a>
+          </div>
+          <div class="col-md-5 custom-footer-text offset-md-1 mb-3">
+            <h3>JUMP IN!</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 custom-footer-text-color">Youtube</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 custom-footer-text-color">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 custom-footer-text-color">Twitter</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 custom-footer-text-color">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 custom-footer-text-color">Academic Website</a></li>
+              </ul>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top">
+          <p>This website is created for academic purposes only and does not represent any official or professional views or opinions.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+        
+    </footer> 
+    <!--link to Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 </html>

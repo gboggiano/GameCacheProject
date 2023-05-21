@@ -33,6 +33,15 @@
     color: #fefefe;
 }
 
+.offcanvas-body{
+    background-color: #230068;
+}
+
+.offcanvas-header{
+
+    background-color: #9E4784;
+}
+
 
 /*OLD CODE*/
 
@@ -434,12 +443,12 @@ width: 100%;
 .grid--box{
 
 width: 100%;
-height: 500px;
+/* height: 500px; */
 /* background-color: #66347F; */
 background-color: #9E4784;
 /* color: #cacaca; */
-display: flex;
-flex-direction: column;
+/* display: flex;
+flex-direction: column; */
 justify-content: center;
 align-items: center;
 border-radius: 15px;
@@ -622,20 +631,8 @@ font-weight: bold; */
 
 
 /*--responsive--*/
-@media only screen and (max-width:576px){
-    
-    .carousel-inner, .carousel-item, .carousel-item img {
-    
-        height: 300px;}
-}
 
-
-.iconic--main{
-
-    background-color: #242047;
-}
-
-@media only screen and (max-width:576px){
+@media only screen and (max-width:375px){
 
     .navbar-custom {
         position: unset;
@@ -646,7 +643,122 @@ font-weight: bold; */
         position: absolute;
         top: 15%;
     }
+
+    .cards--box{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .cards{
+
+        width: 70%;
+        box-shadow: 5px 5px 7pc 0px black;
+        border-radius: 25px;
+    
+    }
+
+
 }
+
+
+@media only screen and (max-width:576px){
+    
+    .carousel-inner, .carousel-item, .carousel-item img {
+    
+        height: 300px;}
+
+        .cards--title h2{
+
+            text-align: center;
+            color: #cacaca;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+        }
+}
+
+
+.iconic--main{
+
+    background-color: #242047;
+}
+
+@media only screen and (max-width:765px){
+
+    .navbar-custom {
+        position: unset;
+    }
+
+    .banner--message--icg{
+
+        position: absolute;
+        top: 15%;
+    }
+
+    .cards--box{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .cards{
+
+        width: 50%;
+        box-shadow: 5px 5px 7pc 0px black;
+        border-radius: 25px;
+    
+    }
+
+    .cards--title h2{
+
+        text-align: center;
+        color: #cacaca;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    
+    .grid--boxes{
+
+        display: grid;
+        /* grid-template-columns: 25% 25% 25% 25%; */
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: repeat(7, 500px);
+        grid-template-areas:
+        /* 'area1 area2 area3 area4'
+        'area5 area6 area7 area8'
+        'area9 area9 area9 area9'; */
+        'area1 area1 area1 area1'
+        'area3 area3 area3 area3'
+        'area2 area2 area2 area2'
+        'area4 area4 area4 area4'
+        'area5 area5 area5 area5'
+        'area7 area7 area7 area7'
+        'area6 area6 area6 area6'
+        'area8 area8 area8 area8'
+        'area9 area9 area9 area9'
+        'area11 area11 area11 area11'
+        'area10 area10 area10 area10';
+        background-color:#37306B;
+        gap: 15px;
+        padding: 30px;
+    
+    }
+
+}
+
+
+
+
+
+
 
 
 /*----------------------------------------Footer------------------------------*/
@@ -746,6 +858,21 @@ margin-top: 33%;
     color: #37306B;
     font-weight: bold;
 
+}
+
+
+/*flex Footer*/
+
+.row{
+
+    justify-content: space-between;
+}
+
+.custom-footer-text, .custom-footer-text-color {
+
+    text-align: end;
+    color: #242047;
+    font-weight: bold;
 }
 
 /*------------ Iconic Games----------*/
