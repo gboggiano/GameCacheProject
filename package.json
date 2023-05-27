@@ -1,0 +1,11 @@
+{
+  "name": "preentega2-boggiano",
+  "version": "1.0.0",
+  "description": "GameCache is an Acamedic website that showcases games information and allows users to browse. It is built with HTML and CSS, using different technologies such as Bootstrap, Flexbox, Grid, responsive design, and media queries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
