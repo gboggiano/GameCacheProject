@@ -1,0 +1,18 @@
+//Imports reset and vars
+
+@import 'base/vars';
+@import 'base/reset';
+
+//Imports components 
+@import 'components/navbar';
+@import 'components/footer';
+
+
+//Import Layout
+
+@import 'layout/index';
+@import 'layout/companies';
+@import 'layout/iconicgames';
+@import 'layout/officialwebsite';
+@import 'layout/about';
+@import 'layout/mediaqueries'; 

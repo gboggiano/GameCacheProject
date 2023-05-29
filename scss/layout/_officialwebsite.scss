@@ -1,0 +1,33 @@
+/*------------ Official Websites----------*/
+
+/*----SASS-----*/
+
+
+.ow--boxes{
+
+    background-color: orange;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ow--box{
+
+        background-color: #37306B;
+        padding: 20px;
+        color: green;
+
+        .ow--h2--title{
+            color: yellow;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        p{
+            color: purple;
+            
+        }
+
+    }
+
+}
