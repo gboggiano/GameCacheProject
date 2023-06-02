@@ -2,32 +2,86 @@
 
 /*----SASS-----*/
 
+.ow--boxes {
+  background-color: orange;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-.ow--boxes{
-
-    background-color: orange;
+  .ow--box {
+    background-color: aqua;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 25px;
 
-    .ow--box{
+    a{
+        text-decoration: none;
+    }
+  }
+}
 
-        background-color: #37306B;
-        padding: 20px;
-        color: green;
+//bucle for 
 
-        .ow--h2--title{
-            color: yellow;
-            text-align: center;
-            font-weight: bolder;
-        }
+@for $testloop from 1 through 4{
+    h#{$testloop}{
+        font-size: 10px * $testloop;
+    }
+} 
 
-        p{
-            color: purple;
-            
-        }
 
+@each $btn,$color in $buttons{
+  .btn-#{$btn}{
+    background-color: $color;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:#eeee;
+
+    &:hover{
+
+      background-color: darken($color, 20%);
     }
 
+    @if $btn == light{
+      color: black;
+    }
+  }
 }
+
+//map-get
+h2{
+
+  color: map-get($buttons, $key:danger );
+}
+
+.card-ow {
+  @extend .d-flex;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid map-get($buttons, dark);
+}
+
+.card-owmix{
+
+  @include flexbox(row,center,center,warp,15px);
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid map-get($buttons, dark);
+
+}
+
+// img{
+
+//   @include images(100%, 300px, cover)
+// }
+
+
+
+

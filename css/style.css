@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+.d-flex, .card-ow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template: 10px;
+  flex-direction: column;
+}
+
 /* Bootstrap for all*/
 /*--Nav Bar--*/
 .ic--wmessage--container {
@@ -509,23 +517,119 @@ footer {
 /*----SASS-----*/
 .ow--boxes {
   background-color: orange;
+  width: 100%;
+  height: auto;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .ow--boxes .ow--box {
-  background-color: #37306B;
+  background-color: aqua;
   padding: 20px;
-  color: green;
+  border-radius: 25px;
 }
-.ow--boxes .ow--box .ow--h2--title {
-  color: yellow;
-  text-align: center;
-  font-weight: bolder;
+.ow--boxes .ow--box a {
+  text-decoration: none;
 }
-.ow--boxes .ow--box p {
-  color: purple;
+
+h1 {
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+.btn-primary {
+  background-color: blue;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.btn-primary:hover {
+  background-color: #000099;
+}
+
+.btn-secondary {
+  background-color: gray;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.btn-secondary:hover {
+  background-color: #4d4d4d;
+}
+
+.btn-light {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.9333333333);
+  color: black;
+}
+.btn-light:hover {
+  background-color: #cccccc;
+}
+
+.btn-danger {
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.btn-danger:hover {
+  background-color: #990000;
+}
+
+.btn-dark {
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.9333333333);
+}
+.btn-dark:hover {
+  background-color: black;
+}
+
+h2 {
+  color: red;
+}
+
+.card-ow {
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.card-owmix {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: warp;
+  gap: 15px;
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
 
 /*--responsive--*/
