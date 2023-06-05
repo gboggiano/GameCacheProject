@@ -3,7 +3,19 @@
 /*----SASS-----*/
 
 .ow--boxes {
-  background-color: orange;
+  background-color: #37306B;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card--boxes{
+
+  background-color: #66347F;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -12,69 +24,56 @@
   align-items: center;
   gap: 20px;
 
-  .ow--box {
-    background-color: aqua;
-    padding: 20px;
-    border-radius: 25px;
-
-    a{
-        text-decoration: none;
-    }
-  }
-}
-
-//bucle for 
-
-@for $testloop from 1 through 4{
-    h#{$testloop}{
-        font-size: 10px * $testloop;
-    }
-} 
-
-
-@each $btn,$color in $buttons{
-  .btn-#{$btn}{
-    background-color: $color;
-    padding: 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    color:#eeee;
-
-    &:hover{
-
-      background-color: darken($color, 20%);
-    }
-
-    @if $btn == light{
-      color: black;
-    }
-  }
-}
-
-//map-get
-h2{
-
-  color: map-get($buttons, $key:danger );
 }
 
 .card-ow {
   @extend .d-flex;
   width: 300px;
   height: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid map-get($buttons, dark);
+  padding: 2px;
+  border-radius: 20px;
+  border: 2px solid map-get($buttonstwo, secondcolor);
+  color: #cacaca;
+  text-align: center;
+  box-shadow: 2px 2px 3pc 0px black;
+  
+  img{
+
+    @include images(100%, 300px, cover);
+    border-radius: 20px
+  }
 }
 
 .card-owmix{
 
-  @include flexbox(row,center,center,warp,15px);
-  width: 300px;
+  @include flexbox(column,center,center,wrap,15px);
+  width: 350px;
   height: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid map-get($buttons, dark);
+  padding: 6px;
+  border-radius: 20px;
+  border: 2px solid map-get($buttonstwo, secondcolor);
+  color: #cacaca;
+  text-align: center;
+  box-shadow: 2px 2px 3pc 0px black;
 
+  img{
+
+    @include images(100%, 300px, cover);
+    border-radius: 20px
+  }
+
+}
+
+
+.services--boxes{
+  background-color: #37306B;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 // img{
