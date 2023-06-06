@@ -27,14 +27,15 @@
     } 
   }
 
-//Extend
+
+  //Extend for services boxes section
 
 .d-flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   grid-template: 10px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 //MIXIN sin parametros - recordar definir primeor el mixin

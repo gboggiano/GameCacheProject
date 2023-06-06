@@ -19,4 +19,33 @@
     height: 500px;
     object-fit: cover;
     
+    
 }
+
+.ic--nbox__container{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #66347F;
+
+    h2{
+        color: #fffefe;
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.ic--container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    background-color: #66347F;
+
+    .ic-custom{
+        width: 25%;
+        background-color: #cacaca;
+    }
+}
+
