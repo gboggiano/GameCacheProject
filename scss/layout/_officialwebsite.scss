@@ -34,6 +34,14 @@
     text-align: center;
     box-shadow: 2px 2px 3pc 0px black;
 
+    a {
+      box-shadow: 2px 2px 3px 0px black;
+    }
+
+    p {
+      text-align: left;
+    }
+
     img {
       @include images(100%, 300px, cover);
       border-radius: 20px;
@@ -41,8 +49,7 @@
   }
 }
 
-
-.line--containerow{
+.line--containerow {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -51,17 +58,15 @@
   justify-content: center;
   align-items: center;
 
-  .line-ow{
-
+  .line-ow {
     width: 35%;
     color: #fefefe;
+  }
 }
-}
-
 
 .services--boxes {
   @extend .d-flex;
-  background-color: #9E4784;
+  background-color: #9e4784;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -70,7 +75,29 @@
   align-items: center;
   gap: 20px;
 
-  .card-owmixse{
+  div {
+    color: #cacaca;
+    text-align: center;
+    width: 29%;
+
+    h3 {
+      background-color: #37306b;
+      padding: 15px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 3px 0px black;
+
+      &:hover {
+        background-color: darken(#37306b, 20%);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #cacaca;
+    }
+  }
+
+  .card-owmixse {
     background-color: #66347f;
     width: 30%;
     height: auto;
@@ -88,46 +115,26 @@
     img {
       @include images(100%, 450px, cover);
       border-radius: 20px;
+      box-shadow: 2px 2px 3px 0px black;
     }
   }
 
-  div{
-
-    color: #cacaca;
-    text-align: center;
-
-    h3{
-      background-color: #37306b;
-      padding: 30px;
-      border-radius: 30px;
-
-      &:hover{
-        background-color: darken(#37306B, 20%);
-      }
-      
-    }
-
-    a{
-      text-decoration: none;
-      color: #cacaca;
-    }
-  }
 
 }
 
-.line--containerowtwo{
+.line--containerowtwo {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 50px;
-  background-color: #9E4784;
+  background-color: #9e4784;
   justify-content: center;
   align-items: center;
 
-  .line-owtwo{
+  .line-owtwo {
     width: 35%;
     color: #fefefe;
-}
+  }
 }
 
 // img{

@@ -1,0 +1,25 @@
+/* ---    Banner   ----  */
+
+/* with Boostrap for all*/
+
+.banner--container--icg{
+
+    position: relative;
+    width: 100%;
+}
+
+.banner--container--icg img{
+
+    width: 100%;
+}
+
+.banner--message--icg{
+
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    /* z-index: -1; */
+    max-width: 100%;
+    width: auto;
+    color: #fefefe;
+}
