@@ -1,5 +1,5 @@
 # GameCacheProject
-GameCache is an Acamedic website that showcases games information and allows users to browse. It is built with HTML and CSS, using different technologies such as Bootstrap, Flexbox, Grid, responsive design, and media queries.
+GameCache is an Academic website that showcases games information and allows users to browse. It is built with HTML and CSS, using different technologies such as Bootstrap, Flexbox, Grid, responsive design, and media queries.
 
 *******
 Features
