@@ -1,51 +1,61 @@
-/*------------ Iconic Games----------*/
+.iconic--message {
+  background-color: #37306b;
+
+  .iconic-custom {
+    background-color: #37306b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: #cacaca;
+    }
+
+    hr {
+      color: #fffefe;
+      width: 50%;
+    }
+  }
+}
 
 /*--carousel--*/
 
-.carousel-inner{
-
-    height: 500px;
-
+.carousel-inner {
+  height: 500px;
 }
 
-.carousel-item{
-
-    height: 500px;
-    
+.carousel-item {
+  height: 500px;
 }
 
-.carousel-item img{
-
-    height: 500px;
-    object-fit: cover;
-    
-    
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
 }
 
-.ic--nbox__container{
+//line from main after carousel
+.ic--nbox__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #66347f;
 
-    display: flex;
-    flex-direction: column;
-    background-color: #66347F;
-
-    h2{
-        color: #fffefe;
-        text-align: center;
-        padding: 15px;
-    }
-}
-
-.ic--container{
-
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+  h2 {
+    color: #fffefe;
+    text-align: center;
     padding: 15px;
-    background-color: #66347F;
-
-    .ic-custom{
-        width: 25%;
-        background-color: #cacaca;
-    }
+  }
 }
 
+//Main cards section from iconic
+.ic--container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 15px;
+  background-color: #66347f;
+
+  .ic-custom {
+    width: 25%;
+    background-color: #cacaca;
+  }
+}

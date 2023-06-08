@@ -120,4 +120,62 @@
     
     }
 
+    .ic--container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // gap: 15px;
+        // padding: 15px;
+        // background-color: #66347F;
+    
+        .ic-custom{
+            width: 70%;
+            background-color: #cacaca;
+        }
+    }
+
+    .ow--boxes {
+        display: flex;
+        flex-direction: column;}
+
+    .card--boxes{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services--boxes{
+
+        display: flex;
+        flex-direction: column;
+
+        div{
+
+            width: 60%;
+        }
+
+        .card-owmixse{
+
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .about--container{
+
+        display: flex;
+        flex-direction: column;
+
+        .about--box{
+
+            text-align: justify;
+        }
+
+    }
 }
