@@ -1,0 +1,34 @@
+.about--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #9e4784;
+
+  .about--image {
+    background-color: #9e4784;
+    text-align: center;
+  }
+
+  .about--box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    width: 50%;
+    align-self: center;
+
+    h2 {
+      color: #cacaca;
+    }
+
+    p {
+      color: #cacaca;
+      font-size: larger;
+    }
+  }
+}

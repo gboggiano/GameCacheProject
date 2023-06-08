@@ -1,0 +1,63 @@
+@each $btntwo, $colortwo in $buttonstwo {
+  .btntwo-#{$btntwo} {
+    background-color: $colortwo;
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    border-style: solid;
+    color: #cacaca;
+    box-shadow: 5px 5px 7pc 0px black;
+
+    &:hover {
+      background-color: darken($colortwo, 20%);
+    }
+
+    a {
+      text-decoration: none;
+      color: #eeee;
+    }
+
+    @if $btntwo == fifthcolor {
+      a {
+        color: black;
+      } 
+    } @else if $btntwo == thirdcolor {
+        border-style: none;
+      }
+    } 
+  }
+
+
+  //Extend for services boxes section
+
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-template: 10px;
+  flex-direction: row;
+}
+
+//MIXIN sin parametros - recordar definir primeor el mixin
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//mixin CON PARAMETROS
+
+@mixin flexbox($direction, $justify, $align, $wrap, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin images($width, $height, $object) {
+  width: $width;
+  height: $height;
+  object-fit: $object;
+}
