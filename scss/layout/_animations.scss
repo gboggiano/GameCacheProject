@@ -1,0 +1,51 @@
+.cards {
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+.split {
+  h3 {
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+}
+
+.nav--item__custom {
+  transition: 0.3s;
+
+  a {
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
+
+    &:hover {
+      background-image: linear-gradient(#cacaca, #cacaca);
+      background-size: 100% 3px;
+    }
+  }
+}
+
+.card-owmix {
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.services--boxes {
+  h3 {
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
