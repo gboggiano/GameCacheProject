@@ -449,6 +449,7 @@ footer {
       flex-direction: column; */
   justify-content: center;
   align-items: center;
+  align-content: center;
   border-radius: 15px;
   box-shadow: 5px 5px 7px 0 black;
   /* padding: 3px; */
@@ -579,6 +580,10 @@ footer {
   width: 25%;
   background-color: #cacaca;
 }
+.ic--container .ic-custom img {
+  max-width: 100%;
+  height: 500px;
+}
 
 /*------------ Official Websites----------*/
 /*----SASS-----*/
@@ -627,7 +632,7 @@ footer {
 }
 .card--boxes .card-owmix img {
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -733,7 +738,7 @@ footer {
 }
 
 /*--responsive--*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 370px) {
   .navbar-custom {
     position: unset;
   }
@@ -752,6 +757,40 @@ footer {
     width: 70%;
     box-shadow: 5px 5px 7pc 0px black;
     border-radius: 25px;
+  }
+  .grid--boxes {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(7, 700px);
+    grid-template-areas: "area1 area1 area1 area1" "area3 area3 area3 area3" "area2 area2 area2 area2" "area4 area4 area4 area4" "area5 area5 area5 area5" "area7 area7 area7 area7" "area6 area6 area6 area6" "area8 area8 area8 area8" "area9 area9 area9 area9" "area11 area11 area11 area11" "area10 area10 area10 area10";
+    background-color: #37306b;
+    gap: 15px;
+    padding: 30px;
+  }
+  .grid--boxes .grid--box {
+    min-height: 300px;
+    max-height: 100%;
+  }
+  .grid--boxes .grid--box .container-md {
+    padding: 0;
+    height: auto;
+  }
+  .grid--boxes .grid--box .container-md h2 {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+  }
+  .grid--boxes .grid--box .container-md p {
+    color: #cacaca;
+    font-size: 100%;
+    line-height: 1.2;
+    text-align: justify;
+    padding: 15px;
+  }
+  .grid--boxes .grid--box img {
+    max-width: 100%;
+    height: 300px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -785,7 +824,7 @@ footer {
     gap: 30px;
   }
   .cards--box .cards {
-    width: 50%;
+    width: 70%;
     height: auto;
     box-shadow: 5px 5px 7pc 0px black;
     border-radius: 25px;
@@ -794,15 +833,15 @@ footer {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%; */
     grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(7, 700px);
+    grid-template-rows: repeat(7, 600px);
     grid-template-areas: "area1 area1 area1 area1" "area3 area3 area3 area3" "area2 area2 area2 area2" "area4 area4 area4 area4" "area5 area5 area5 area5" "area7 area7 area7 area7" "area6 area6 area6 area6" "area8 area8 area8 area8" "area9 area9 area9 area9" "area11 area11 area11 area11" "area10 area10 area10 area10";
     background-color: #37306b;
     gap: 15px;
     padding: 30px;
   }
   .grid--boxes .grid--box {
-    width: 100%;
-    height: auto;
+    min-height: 600px;
+    max-height: 100%;
   }
   .grid--boxes .grid--box .container-md {
     padding: 0;
@@ -816,9 +855,14 @@ footer {
   .grid--boxes .grid--box .container-md p {
     color: #cacaca;
     font-size: 100%;
-    line-height: 1.2;
+    line-height: 1.1 0.5;
     text-align: justify;
     padding: 15px;
+  }
+  .grid--boxes .grid--box img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover;
   }
   .ic--container {
     display: flex;
@@ -857,37 +901,6 @@ footer {
   }
   .about--container .about--box {
     text-align: justify;
-  }
-}
-@media only screen and (max-width: 1368px) {
-  .grid--boxes {
-    display: grid;
-    /* grid-template-columns: 25% 25% 25% 25%; */
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(7, 550px);
-    grid-template-areas: "area1 area1 area1 area1" "area3 area3 area3 area3" "area2 area2 area2 area2" "area4 area4 area4 area4" "area5 area5 area5 area5" "area7 area7 area7 area7" "area6 area6 area6 area6" "area8 area8 area8 area8" "area9 area9 area9 area9" "area11 area11 area11 area11" "area10 area10 area10 area10";
-    background-color: #37306b;
-    gap: 15px;
-    padding: 30px;
-  }
-  .grid--boxes .grid--box {
-    width: 100%;
-  }
-  .grid--boxes .grid--box .container-md {
-    padding: 0;
-    width: 80%;
-  }
-  .grid--boxes .grid--box .container-md h2 {
-    width: 100%;
-    padding: 8px;
-    text-align: center;
-  }
-  .grid--boxes .grid--box .container-md p {
-    color: #cacaca;
-    font-size: 100%;
-    line-height: 1.6;
-    text-align: justify;
-    padding: 15px;
   }
 }
 .cards {

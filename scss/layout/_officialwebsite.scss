@@ -43,7 +43,7 @@
     }
 
     img {
-      @include images(100%, 300px, cover);
+      @include images(100%, 350px, cover);
       border-radius: 20px;
     }
   }
