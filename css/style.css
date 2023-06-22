@@ -106,7 +106,7 @@
 /* Bootstrap for all*/
 /*--Nav Bar--*/
 .ic--wmessage--container {
-  background-color: #37306B;
+  background-color: #37306b;
   text-align: center;
 }
 
@@ -114,7 +114,8 @@
   background-color: #230068;
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
   color: #fefefe;
 }
 
@@ -123,7 +124,7 @@
 }
 
 .offcanvas-header {
-  background-color: #9E4784;
+  background-color: #9e4784;
 }
 
 /* ---    Logo   ----  */
@@ -404,11 +405,15 @@ footer {
   background-color: #9e4784;
   color: #fefefe;
 }
+.split--box .s1 h2 {
+  margin: 16px;
+}
 .split--box .s1 h3 {
   background-color: #37306b;
   border-radius: 10px;
   text-align: right;
   padding: 10px;
+  margin: 10px;
 }
 .split--box .s2 {
   background-color: #9e4784;
@@ -433,7 +438,7 @@ footer {
   display: grid;
   /* grid-template-columns: 25% 25% 25% 25%; */
   grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(5, 500px);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: "area1 area1 area1 area1" "area2 area2 area3 area3" "area4 area4 area5 area5" "area6 area6 area7 area7" "area8 area8 area9 area9" "area10 area10 area11 area11";
   background-color: #37306b;
   gap: 15px;
@@ -762,15 +767,11 @@ footer {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%; */
     grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(7, 700px);
+    grid-template-rows: repeat(7, auto);
     grid-template-areas: "area1 area1 area1 area1" "area3 area3 area3 area3" "area2 area2 area2 area2" "area4 area4 area4 area4" "area5 area5 area5 area5" "area7 area7 area7 area7" "area6 area6 area6 area6" "area8 area8 area8 area8" "area9 area9 area9 area9" "area11 area11 area11 area11" "area10 area10 area10 area10";
     background-color: #37306b;
     gap: 15px;
     padding: 30px;
-  }
-  .grid--boxes .grid--box {
-    min-height: 300px;
-    max-height: 100%;
   }
   .grid--boxes .grid--box .container-md {
     padding: 0;
@@ -792,6 +793,17 @@ footer {
     max-width: 100%;
     height: 300px;
   }
+  .about--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about--container .about--image img {
+    align-self: center;
+    width: 100%;
+  }
+  .about--container .about--box {
+    text-align: justify;
+  }
 }
 @media only screen and (max-width: 576px) {
   .carousel-inner,
@@ -805,6 +817,17 @@ footer {
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
+  }
+  .about--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about--container .about--image img {
+    align-self: center;
+    width: 100%;
+  }
+  .about--container .about--box {
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 765px) {
@@ -833,15 +856,11 @@ footer {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%; */
     grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(7, 600px);
+    grid-template-rows: repeat(7, auto);
     grid-template-areas: "area1 area1 area1 area1" "area3 area3 area3 area3" "area2 area2 area2 area2" "area4 area4 area4 area4" "area5 area5 area5 area5" "area7 area7 area7 area7" "area6 area6 area6 area6" "area8 area8 area8 area8" "area9 area9 area9 area9" "area11 area11 area11 area11" "area10 area10 area10 area10";
     background-color: #37306b;
     gap: 15px;
     padding: 30px;
-  }
-  .grid--boxes .grid--box {
-    min-height: 600px;
-    max-height: 100%;
   }
   .grid--boxes .grid--box .container-md {
     padding: 0;
@@ -898,6 +917,10 @@ footer {
   .about--container {
     display: flex;
     flex-direction: column;
+  }
+  .about--container .about--image img {
+    align-self: center;
+    width: 100%;
   }
   .about--container .about--box {
     text-align: justify;
